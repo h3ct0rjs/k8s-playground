@@ -1,0 +1,7 @@
+{
+  "title": "Logs en Kubernetes",
+  "description": "Aprende sobre los logs en kubernetes",
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

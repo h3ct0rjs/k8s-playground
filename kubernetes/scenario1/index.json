@@ -1,0 +1,18 @@
+{
+  "title": "Pods en Kubernetes",
+  "description": "Aprende sobre los pods el recurso fundamental en kubernetes",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "step1.md"
+      }
+    ]
+  },
+
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}

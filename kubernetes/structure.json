@@ -1,0 +1,11 @@
+{
+  "title": "⚓️ Introduccion a Kubernetes, CNCF Pereira Chapter",
+  "description": "Aprende sobre conceptos de kubernetes y sus componentes en 2 horas.",
+  "items": [
+    { "path": "scenario0" },
+    { "path": "scenario1" },
+    { "path": "scenario2" },
+    { "path": "scenario3" },
+    { "path": "scenario4" }
+  ]
+}
