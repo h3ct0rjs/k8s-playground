@@ -1,4 +1,4 @@
-# 🎉 Finalizando el Taller de Kubernetes
+# 🎉 Finalizando el Scenario0
 
 ¡Felicidades! 🚀 Has completado el taller sobre comandos básicos en Kubernetes. A lo largo de este taller, has aprendido a utilizar varios comandos esenciales para interactuar con un clúster de Kubernetes, así como a verificar el estado de los recursos en tu entorno.
 
