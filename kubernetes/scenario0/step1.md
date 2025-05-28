@@ -6,82 +6,82 @@ Para ejecutar comandos de Kubernetes, utiliza la línea de comandos en el entorn
 Para verificar el estado del clúster, utiliza el comando `kubectl cluster-info`. Este comando te mostrará información sobre el clúster y los nodos que lo componen.
 ```bash
 kubectl cluster-info
-```
+```{{copy}}
 
 ## 1.5. Verificar la versión de Kubernetes
 Para verificar la versión de Kubernetes, utiliza el comando `kubectl version`. Este comando te mostrará la versión del cliente y del servidor de Kubernetes.
 ```bash
 kubectl version
-```
+```{{copy}}
 
 ## 1.6. Verificar los nodos del clúster
 Para verificar los nodos del clúster, utiliza el comando `kubectl get nodes`. Este comando te mostrará una lista de todos los nodos en el clúster y su estado.
 ```bash
 kubectl get nodes
-```
+```{{copy}}
 
 ## 1.7. Verificar los pods del clúster
 Para verificar los pods del clúster, utiliza el comando `kubectl get pods`. Este comando te mostrará una lista de todos los pods en el clúster y su estado.
 ```bash
 kubectl get pods
-```
+```{{copy}}
 
 ## 1.8. Verificar los servicios del clúster
 Para verificar los servicios del clúster, utiliza el comando `kubectl get services`. Este comando te mostrará una lista de todos los servicios en el clúster y su estado.
 ```bash
 kubectl get services
-```
+```{{copy}}
 
 ## 1.9. Verificar los deployments del clúster
 Para verificar los deployments del clúster, utiliza el comando `kubectl get deployments`. Este comando te mostrará una lista de todos los deployments en el clúster y su estado.
 ```bash
 kubectl get deployments
-```
+```{{copy}}
 
 ## 1.10. Verificar los namespaces del clúster
 Para verificar los namespaces del clúster, utiliza el comando `kubectl get namespaces`. Este comando te mostrará una lista de todos los namespaces en el clúster y su estado.
 ```bash
 kubectl get namespaces
-```
+```{{copy}}
 
 ## 1.11. Verificar los recursos del clúster
 Para verificar los recursos del clúster, utiliza el comando `kubectl get all`. Este comando te mostrará una lista de todos los recursos en el clúster y su estado.
 ```bash
 kubectl get all
-```
+```{{copy}}
 
 ## 1.12. Verificar los logs del clúster
 Para verificar los logs del clúster, utiliza el comando `kubectl logs`. Este comando te mostrará los logs de todos los pods en el clúster.
 ```bash
 kubectl logs
-```
+```{{copy}}
 
 ## 1.13. Verificar los eventos del clúster
 Para verificar los eventos del clúster, utiliza el comando `kubectl get events`. Este comando te mostrará una lista de todos los eventos en el clúster y su estado.
 ```bash
 kubectl get events
-```
+```{{copy}}
 
 ## 1.14. Verificar la configuración del clúster
 Para verificar la configuración del clúster, utiliza el comando `kubectl config view`. Este comando te mostrará la configuración actual del clúster y los contextos disponibles.
 ```bash
 kubectl config view
-```
+```{{copy}}
 
 ## 1.15. Verificar la configuración del contexto actual
 Para verificar la configuración del contexto actual, utiliza el comando `kubectl config current-context`. Este comando te mostrará el contexto actual del clúster.
 ```bash
 kubectl config current-context
-```
+```{{copy}}
 
 ## 1.16. Verificar la configuración del contexto
 Para verificar la configuración del contexto, utiliza el comando `kubectl config get-contexts`. Este comando te mostrará una lista de todos los contextos disponibles en el clúster.
 ```bash
 kubectl config get-contexts
-```
+```{{copy}}
 
 ## 1.17. Verificar la configuración del contexto
 Para verificar la configuración del contexto, utiliza el comando `kubectl config view`. Este comando te mostrará la configuración actual del clúster y los contextos disponibles.
 ```bash
 kubectl config view
-```
+```{{copy}}

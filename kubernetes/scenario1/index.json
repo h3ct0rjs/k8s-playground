@@ -1,14 +1,22 @@
 {
-  "title": "Pods en Kubernetes",
-  "description": "Aprende sobre los pods el recurso fundamental en kubernetes",
+  "title": "📦 Pods en Kubernetes",
+  "description": "Aprende sobre los pods, el recurso fundamental en Kubernetes. Practica y aprende en este escenario los principios basicos",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "text": "step1.md"
-      }
+        "text": "step1.md",
+        "background": "background.sh"
+      },
+      {
+        "text": "step2.md"
+        },
+        {
+        "text": "step3.md"
+        }
+
     ]
   },
 

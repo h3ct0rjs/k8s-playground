@@ -1,7 +1,32 @@
 {
-  "title": "Deployments en Kubernetes",
-  "description": "Aprende sobre los pods el recurso fundamental en kubernetes",
+  "title": "🚀Deployments en Kubernetes",
+  "description": "Llevemos nuestro conocimiento a otro nivel😎, aprendamos sobre las diferentes estrategias para desplegar aplicaciones en Kubernetes.",
+  "difficulty": "easy",
+    "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "step1.md",
+        "background": "background.sh"
+        },
+    {
+      "title": "Primeros pasos con kubectl",
+      "text": "step2.md"
+    },
+    {
+      "title": "Desplegando tu primer pod",
+      "text": "step3.md"
+    },
+    {
+      "title": "🎉¡Felicidades!",
+      "text": "finish.md"
+    }
+  ]
+},
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }
+
 }

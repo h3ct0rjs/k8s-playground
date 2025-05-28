@@ -1,7 +1,32 @@
 {
-  "title": "Servicios en Kubernetes",
-  "description": "Aprende sobre los pods el recurso fundamental en kubernetes",
+  "title": "⚙️Servicios en Kubernetes",
+    "description": "En este escenario aprenderás los conceptos fundamentales sobre los servicios en Kubernetes. Descubrirás cómo exponer aplicaciones, gestionar el acceso interno y externo, y entenderás la importancia de los servicios para la comunicación entre pods.",
+  "difficulty": "easy",
+    "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "text": "step1.md",
+        "background": "background.sh"
+        },
+    {
+      "title": "Primeros pasos con kubectl",
+      "text": "step2.md"
+    },
+    {
+      "title": "Desplegando tu primer pod",
+      "text": "step3.md"
+    },
+    {
+      "title": "🎉¡Felicidades!",
+      "text": "finish.md"
+    }
+  ]
+},
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }
+
 }
