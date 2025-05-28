@@ -8,8 +8,17 @@
     },
     "steps": [
       {
-        "text": "step1.md",
+        "text": "step0.md",
         "background": "background.sh"
+        },
+        {
+        "text": "step00.md",
+        "title": "Patron de uso kubectl",
+        "foreground": "foreground.sh"
+        },
+      {
+        "text": "step1.md",
+        "title": "Primeros pasos con kubectl"
         },
     {
       "title": "Primeros pasos con kubectl",

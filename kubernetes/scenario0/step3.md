@@ -1,71 +1,99 @@
-# Contenido para el archivo /k8s-killercoda-workshop/k8s-killercoda-workshop/scenario0/step3.md
+# Desplegando tu Primer Pod
+Ahora que tienes tu clúster de ⚓️ Kubernetes en funcionamiento, es hora de desplegar tu primer 📦Pod. Un Pod es la unidad más pequeña que puedes desplegar y gestionar en Kubernetes, profundizaremos mas en el siguiente escenario acerca de este recurso.
 
-````markdown
-<!-- filepath: /Users/hjimenez/Developer/Fun/k8s-playground/kubernetes/scenario0/step3.md -->
-# Profundizando en Kubernetes
+Por el momento 🚀desplegaremos un Pod simple para familizarnos con `kubectl` .
 
-En este paso, exploraremos conceptos más avanzados y comandos útiles en Kubernetes que te ayudarán a gestionar tu clúster de manera más efectiva.
+## Desplegar un Pod
+Para desplegar un Pod, siempre usarás el siguiente comando:
 
-## 3.1. Crear un nuevo namespace
-Los namespaces son una forma de dividir los recursos en un clúster. Para crear un nuevo namespace, utiliza el siguiente comando:
 ```bash
-kubectl create namespace <nombre-del-namespace>
+kubectl run <nombre-del-pod> --image=<imagen-del-contenedor>
 ```
 
-## 3.2. Desplegar una aplicación
-Para desplegar una aplicación en Kubernetes, puedes usar un archivo de configuración YAML. Aquí hay un ejemplo de cómo desplegar una aplicación simple:
+➡️ Como ejemplo desplegaremos un Pod llamado `hello-pereira` con la imagen de [Nginx](https://hub.docker.com/_/nginx):
+
 ```bash
-kubectl apply -f <archivo-de-configuracion>.yaml
-```
+kubectl run hello-pereira --image=nginx
+```{{exec}}
 
-## 3.3. Escalar un deployment
-Para escalar un deployment existente, utiliza el siguiente comando:
+## Verificar el estado del Pod
+Para verificar el estado del Pod que acabas de desplegar, utiliza el siguiente comando:
 ```bash
-kubectl scale deployment <nombre-del-deployment> --replicas=<número-de-replicas>
-```
+kubectl get pods
+```{{exec}}
 
-## 3.4. Actualizar un deployment
-Para actualizar una imagen en un deployment, puedes usar el siguiente comando:
+**Nota** ℹ️:  El Status del contenedor, si es `Running` significa que el Pod se
+ha desplegado correctamente y está en funcionamiento. Si tiene un estado diferente,
+como `Pending` o `CrashLoopBackOff`, significa que hay un problema con el Pod.
+
+ℹ️: Recuerda que puedes usar el flag `-o wide` para obtener más información sobre el 📦Pod,
+como la **IP** y el **nodo** en el que se está ejecutando:
+
 ```bash
-kubectl set image deployment/<nombre-del-deployment> <nombre-del-contenedor>=<nueva-imagen>
-```
+kubectl get pods -o wide
+```{{exec}}
 
-## 3.5. Eliminar un recurso
-Para eliminar un recurso, como un pod o un deployment, utiliza el siguiente comando:
+➡️ También puedes usar el flag `--watch` para observar los cambios en tiempo real:
 ```bash
-kubectl delete <tipo-de-recurso> <nombre-del-recurso>
-```
+kubectl get pods --watch
+```{{exec}}
 
-## 3.6. Verificar el estado de un deployment
-Para verificar el estado de un deployment, utiliza el siguiente comando:
+Puedes detener la observación presionando `Ctrl + C`.
+
+
+➡️ Si quisiera deplegar un pod de python/mysql o algo similar, podrías usar el siguiente comando:
+
 ```bash
-kubectl rollout status deployment/<nombre-del-deployment>
-```
+kubectl run mi-mysql --image=mysql
+```{{exec}}
 
-## 3.7. Obtener información detallada sobre un pod
-Para obtener información detallada sobre un pod específico, utiliza el siguiente comando:
+Esto desplegará un Pod llamado `mi-mysql` con la imagen de [MySQL](https://hub.docker.com/_/mysql).
+
+recuerda revisar el estado del Pod con:
 ```bash
-kubectl describe pod <nombre-del-pod>
-```
+kubectl get pods mi-mysql
+```{{exec}}
 
-## 3.8. Configurar recursos de límite
-Para establecer límites de recursos en un pod, puedes incluir la siguiente sección en tu archivo de configuración YAML:
-```yaml
-resources:
-  limits:
-    memory: "512Mi"
-    cpu: "500m"
-```
+## 🧑‍🚒 Obteniendo más información del Pod
+Ahora que has desplegado tu Pod, es importante asegurarte de que todo esté funcionando correctamente. A veces, los Pods pueden fallar por diversas razones, como problemas de configuración o errores en la imagen del contenedor.
 
-## 3.9. Realizar un rollback
-Si necesitas revertir un deployment a una versión anterior, puedes usar el siguiente comando:
+😩 O no!!,  pero mira el pod esta fallando 🚨, necesitamos obtener mas información de este
+Pod para entender qué está pasando. Para ello, puedes usar el comando
+
+`kubectl describe pod <nombre-del-pod>` :
+
+➡️  Si ejecutas lo siguiente:
+
 ```bash
-kubectl rollout undo deployment/<nombre-del-deployment>
+kubectl describe pod mi-mysql
+```{{exec}}
+
+Esto te proporcionará información detallada sobre el Pod, incluyendo eventos recientes, condiciones y errores que puedan haber ocurrido durante su despliegue.
+
+## Acceder al Pod
+Para acceder al Pod y ver los logs, puedes usar el siguiente comando:
+
+```bash
+kubectl logs <nombre-del-pod>
 ```
 
-## 3.10. Limpiar recursos no utilizados
-Para eliminar recursos que ya no se utilizan, puedes usar el siguiente comando:
+➡️  Si ejecutas lo siguiente:
 ```bash
-kubectl delete all --all -n <nombre-del-namespace>
+kubectl logs mi-mysql
+```{{exec}}
+
+Esto te mostrará los logs del Pod, lo que puede ayudarte a identificar problemas específicos con la aplicación que se está ejecutando en el Pod.
+
+## Eliminar un Pod
+Si deseas eliminar el Pod que has desplegado, puedes usar el siguiente comando:
+
+```bash
+kubectl delete pod <nombre-del-pod>
 ```
-````
+➡️ Si ejecutas lo siguiente:
+
+```bash
+kubectl delete pod mi-mysql
+```{{exec}}
+
+Esto eliminará el Pod `mi-mysql` del clúster de Kubernetes.
