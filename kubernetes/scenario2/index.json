@@ -2,31 +2,37 @@
   "title": "🚀Deployments en Kubernetes",
   "description": "En este escenario aprenderás cómo gestionar el ciclo de vida de tus aplicaciones utilizando Deployments en Kubernetes. Descubrirás cómo crear, actualizar y escalar aplicaciones de forma sencilla y segura, asegurando alta disponibilidad y control de versiones. A través de ejercicios prácticos, utilizarás kubectl para desplegar y administrar Deployments en tu clúster.",
   "difficulty": "easy",
-    "details": {
+  "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "text": "step1.md",
+        "text": "step01.md",
         "background": "background.sh"
-        },
-    {
-      "title": "Primeros pasos con kubectl",
-      "text": "step2.md"
-    },
-    {
-      "title": "Desplegando tu primer pod",
-      "text": "step3.md"
-    },
-    {
-      "title": "🎉¡Felicidades!",
-      "text": "finish.md"
-    }
-  ]
-},
+      },
+      {
+        "text": "step02.md"
+      },
+      {
+        "text": "step021.md"
+      },
+      {
+        "text": "step11.md"
+      },
+      {
+        "text": "step03.md"
+      },
+      {
+        "text": "step04.md"
+      },
+      {
+        "title": "🎉¡Felicidades!",
+        "text": "finish.md"
+      }
+    ]
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }
-
 }

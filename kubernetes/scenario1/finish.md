@@ -1,4 +1,4 @@
-# 🎉 Finalizando el Scenario0
+# 🎉 Finalizando el Scenario1
 
 ¡Felicidades! 🚀 Has completado el segundo escenario del Workshop de CNCF Pereira sobre
 PODs en Kubernetes. A lo largo de este escenario, has aprendido sobre los Pods, su estructura y cómo se utilizan para ejecutar aplicaciones en contenedores. También has explorado cómo crear y gestionar Pods usando manifiestos `YAML`.
