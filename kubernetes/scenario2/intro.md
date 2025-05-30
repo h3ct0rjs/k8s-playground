@@ -1,10 +1,12 @@
-# PODs en Kubernetes
+# ⚙️ Deployment en Kubernetes
 
-En Kubernetes, un Pod es la unidad más pequeña que puedes desplegar y gestionar.
-En este escenario, aprenderás sobre los Pods, su estructura y cómo se utilizan para ejecutar aplicaciones en contenedores. Tambien explorarás cómo crear y gestionar Pods usando manifiestos YAML.
+En Kubernetes, un deployment es un recurso que permite gestionar el ciclo de vida de los Pods, asegurando que el número deseado de **réplicas** de un Pod esté en ejecución en todo momento.  Los deployments son útiles para implementar actualizaciones, revertir cambios y escalar aplicaciones de manera eficiente.
+
+
+
 
 ## Objetivo
 
-- Comprender el concepto de Pod y su importancia en Kubernetes.
-- Aprender a crear y gestionar Pods usando manifiestos YAML.
-
+- Comprender qué es un deployment en Kubernetes.
+- Aprender a crear y gestionar deployments.
+- Explorar cómo los deployments facilitan la gestión de aplicaciones en Kubernetes.

@@ -1,6 +1,6 @@
 {
   "title": "🚀Deployments en Kubernetes",
-  "description": "Llevemos nuestro conocimiento a otro nivel😎, aprendamos sobre las diferentes estrategias para desplegar aplicaciones en Kubernetes.",
+  "description": "En este escenario aprenderás cómo gestionar el ciclo de vida de tus aplicaciones utilizando Deployments en Kubernetes. Descubrirás cómo crear, actualizar y escalar aplicaciones de forma sencilla y segura, asegurando alta disponibilidad y control de versiones. A través de ejercicios prácticos, utilizarás kubectl para desplegar y administrar Deployments en tu clúster.",
   "difficulty": "easy",
     "details": {
     "intro": {

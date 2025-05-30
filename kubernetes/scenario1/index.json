@@ -11,12 +11,23 @@
         "background": "background.sh"
       },
       {
-        "text": "step2.md",
+        "text": "step11.md",
         "foreground": "foreground.sh"
+      },
+      {
+        "text": "step2.md"
         },
         {
-        "text": "step3.md"
-        }
+        "text": "step22.md"
+        },
+        {
+          "text": "step3.md"
+        },
+      {
+        "title": "🎉¡Felicidades!",
+        "text": "finish.md"
+      }
+
 
     ]
   },

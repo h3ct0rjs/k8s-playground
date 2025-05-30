@@ -1,24 +1,30 @@
 ﻿# 🟢 ¿Qué es un POD 📦?
 
-Un **Pod** es la unidad más pequeña desplegable en Kubernetes.
-Un Pod puede contener **uno** o **varios** contenedores que comparten :
+Un **POD** es la unidad más pequeña desplegable en Kubernetes.
+Un POD puede contener **uno** o **varios** contenedores que comparten :
 - almacenamiento
 - red
 - especificaciones sobre cómo ejecutar los contenedores.
 
-Generalmente, un Pod contiene un solo contenedor, pero puede contener múltiples contenedores que están estrechamente relacionados y necesitan compartir recursos.
-Un Pod se ejecuta en un nodo del clúster de Kubernetes y es gestionado por el **controlador de Pods**. Los Pods son efímeros, lo que significa que pueden ser creados y destruidos según sea necesario.
+Generalmente, un POD contiene un solo contenedor, pero puede contener múltiples contenedores que están estrechamente relacionados y necesitan compartir recursos.
+Un POD se ejecuta en un nodo del clúster de Kubernetes y es gestionado por el **controlador de PODs**. Los PODs son efímeros, lo que significa que pueden ser creados y destruidos según sea necesario.
 
-![Pods](https://kubernetes.io/images/docs/pod.svg)
+![PODs](https://kubernetes.io/images/docs/POD.svg)
 
 ## ℹ️ Por qué es importante
-Los Pods son importantes porque proporcionan un entorno de ejecución para los contenedores, gestionando aspectos como la red, el almacenamiento y la configuración. Al utilizar Pods, Kubernetes puede garantizar que los contenedores que necesitan trabajar juntos se ejecuten en el mismo contexto, facilitando la comunicación y la gestión de recursos.
+Los PODs son importantes porque proporcionan un entorno de ejecución para los contenedores, gestionando aspectos como la red, el almacenamiento y la configuración. Al utilizar PODs, Kubernetes puede garantizar que los contenedores que necesitan trabajar juntos se ejecuten en el mismo contexto, facilitando la comunicación y la gestión de recursos.
 
-## Estados de un POD
-Los estados de un Pod pueden variar segun la siguiente imagen :
+Kubernetes gestiona el ciclo de vida de los PODs y sus contenedores, lo que significa que un POD puede pasar por diferentes estados a medida que se crea, ejecuta y finaliza. Estos estados son importantes para entender cómo se comportan los PODs en el clúster.
 
-![](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*tgMDxbLM6z8ayeC0J0XtSQ.png)
+Hay un compoenente llamado **Kubelet** que se encarga de gestionar los PODs en cada nodo del clúster. El **Kubelet** se comunica con el servidor de la API de Kubernetes para informar sobre el estado de los PODs y recibir instrucciones sobre cómo gestionarlos.
 
-Como un ejemplo :
+Tareas de Kubetlet incluyen:
+- Monitorear el estado de los PODs y sus contenedores.
+- Iniciar, detener y reiniciar contenedores según sea necesario.
+- Coordinar la asignación de recursos entre los contenedores en un POD.
+- Contactar el CRI (Container Runtime Interface) para gestionar los contenedores.
 
-![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*5TdZqzM5JkEI8UgkxBY0SQ.png)
+Tengamos presente la arquitectura de Kubernetes, que se compone de varios componentes clave, incluyendo el servidor de la API, el controlador de PODs y el Kubelet. Estos componentes trabajan juntos para gestionar los PODs y sus contenedores en todo el clúster.
+
+![](https://vergaracarmona.es/wp-content/uploads/2023/09/arquitectura-Kubernetes.webp)
+
