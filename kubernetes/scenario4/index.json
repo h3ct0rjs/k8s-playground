@@ -2,7 +2,7 @@
   "title": "💾 Storage en Kubernetes",
   "description": "En este escenario aprenderás los conceptos esenciales sobre el almacenamiento en Kubernetes. Descubrirás cómo funcionan los volúmenes, cómo conectar almacenamiento persistente a tus pods y la importancia de los PersistentVolumes y PersistentVolumeClaims. Mediante ejercicios prácticos, utilizarás kubectl para gestionar y explorar diferentes opciones de almacenamiento.",
   "difficulty": "easy",
-    "details": {
+  "details": {
     "intro": {
       "text": "intro.md"
     },
@@ -10,23 +10,20 @@
       {
         "text": "step1.md",
         "background": "background.sh"
-        },
-    {
-      "title": "Primeros pasos con kubectl",
-      "text": "step2.md"
-    },
-    {
-      "title": "Desplegando tu primer pod",
-      "text": "step3.md"
-    },
-    {
-      "title": "🎉¡Felicidades!",
-      "text": "finish.md"
-    }
-  ]
-},
+      },
+      {
+        "text": "step2.md"
+      },
+      {
+        "text": "step3.md"
+      },
+      {
+        "title": "🎉¡Felicidades!",
+        "text": "finish.md"
+      }
+    ]
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
   }
-
 }
