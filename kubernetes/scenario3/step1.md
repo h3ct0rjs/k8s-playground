@@ -18,3 +18,27 @@ Kubernetes ofrece varios tipos de servicios, cada uno con un propósito específ
 
 - **ExternalName:** Permitiendo que un servicio se resuelva a un nombre DNS externo.
 
+## Paso 1: Crear un Deployment y exponerlo con un Service ClusterIP
+
+Primero, crea un Deployment de ejemplo:
+
+```sh
+kubectl create deployment mi-app --image=nginx:1.25.2
+```
+
+Ahora, expón el Deployment como un Service de tipo ClusterIP:
+
+```sh
+kubectl expose deployment mi-app --port=80 --target-port=80 --name=mi-app-service --type=ClusterIP
+```
+
+Verifica los recursos creados:
+
+```sh
+kubectl get deployments
+kubectl get services
+kubectl get pods
+```
+
+El Service de tipo ClusterIP solo es accesible dentro del clúster.
+
