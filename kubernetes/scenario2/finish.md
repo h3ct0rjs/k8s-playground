@@ -1,17 +1,17 @@
 # 🎉 Finalizando el Scenario2
 
-¡Felicidades! 🚀 Has completado otro scenario del Workshop de CNCF Pereira sobre deployments.
+¡Felicidades! 🚀 Has completado otro scenario del Workshop de CNCF Pereira sobre **Deployments**.
 
 ## 🤔 Reflexiones Finales
 
-Los Deployments son una parte fundamental de Kubernetes que te permiten gestionar el ciclo de vida de tus aplicaciones 📦 de manera eficiente. A lo largo de este escenario, has aprendido a crear y gestionar deployments, lo que te permite escalar y actualizar tus aplicaciones sin tiempo de inactividad.
+Los **Deployments** son una parte fundamental de Kubernetes que te permiten gestionar el ciclo de vida de tus aplicaciones 📦 de manera eficiente. A lo largo de este escenario, has aprendido a crear y gestionar **Deployments**, lo que te permite escalar y actualizar tus aplicaciones sin tiempo de inactividad.
 
 # 🎉 ¡Felicidades!
 
 Has aprendido a:
-- Crear un Deployment y entender su relación con ReplicaSet.
-- Actualizar la imagen de un Deployment (estrategia rolling update).
-- Escalar un Deployment y observar cómo el ReplicaSet mantiene la cantidad de pods.
+- Crear un **Deployment** y entender su relación con **ReplicaSet**.
+- Actualizar la imagen de un **Deployment** (estrategia rolling update).
+- Escalar un **Deployment** y observar cómo el **ReplicaSet** mantiene la cantidad de pods.
 
 Sigue explorando los comandos de `kubectl` y consulta la [documentación oficial de Kubernetes](https://kubernetes.io/es/docs/concepts/workloads/controllers/deployment/) para profundizar más.
 

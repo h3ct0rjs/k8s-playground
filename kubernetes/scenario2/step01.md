@@ -6,10 +6,10 @@ Para entender mejor los Deployments, es importante conocer el concepto de **Repl
 
 ## ¿Qué es un ReplicaSet?
 
-Un **ReplicaSet** es un recurso encargado de asegurar que un número específico de réplicas de un 📦POD estén corriendo en todo momento. Cuando creas un Deployment, este automáticamente crea y gestiona un **ReplicaSet** por ti.
+Un **ReplicaSet** es un recurso encargado de asegurar que un número específico de réplicas de un 📦Pod estén corriendo en todo momento. Cuando creas un Deployment, este automáticamente crea y gestiona un **ReplicaSet** por ti.
 
-- Si el 📦POD falla, el ReplicaSet lo _reemplazará_.
-- Si escalas el Deployment, el ReplicaSet ajusta la cantidad de PODs.
+- Si el 📦Pod falla, el **ReplicaSet** lo _reemplazará_.
+- Si escalas el Deployment, el **ReplicaSet** ajusta la cantidad de Pods.
 
 ![](https://miro.medium.com/v2/resize:fit:1400/1*lH0EI3FRPNVI5wsxgtx9IQ.png)
 
@@ -18,6 +18,12 @@ La relacion entre estos es que un **Deployment** crea un **ReplicaSet**, y este 
 Observa la siguiente imagen que ilustra esta relación:
 
 ![](https://lh3.googleusercontent.com/proxy/h2zD_NZ2CpFrhBjZFpmRwpt3_uOILj6btfBD_HerPaQ1vYHeP6_3enwG4i2igcW9TbvxTUkVc5jq0fKPUYjHeOYUV34wVTU1IEF1lLRELbATG75tLZt9)
+
+Puedes observar las **ReplicaSets** que Kubernetes ha creado en este entorno de trabajo:
+
+```bash
+kubecolor get replicasets
+```{{exec}}
 
 ## ¿Por qué usar Deployments?
 

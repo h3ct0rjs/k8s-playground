@@ -1,7 +1,7 @@
 ﻿## 🚀 Creando tu segundo 📦Pod
 
 Ahora crearás un Pod usando un manifiesto YAML.
-Para ello utilizaremos `nginx` como ejemplo, un servidor web popular.
+Para ello utilizaremos `nginx` como ejemplo, un servidor web popular
 que se utiliza comúnmente para servir a millones de usuarios en todo el mundo
 sitios web/aplicaciones/contenidos estáticos.
 
