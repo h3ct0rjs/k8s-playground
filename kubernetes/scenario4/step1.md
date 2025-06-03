@@ -57,4 +57,4 @@ kubectl delete pod pod-emptydir
 ```sh
 kubectl get pods
 ```
-Si intentas acceder al Pod eliminado, verás que ya no existe, y con él, el volumen `emptyDir` también se ha eliminado.
+Si intentas acceder a los datos del Pod eliminado, verás que ya no existe, y con él, el volumen `emptyDir` también se ha eliminado.
