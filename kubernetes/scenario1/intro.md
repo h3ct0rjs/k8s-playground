@@ -1,4 +1,4 @@
-# 📦 PODs en Kubernetes
+# 📦 Pods en Kubernetes
 
 En Kubernetes, un 📦Pod es la unidad más pequeña que puedes desplegar y gestionar.
 En este escenario, aprenderás sobre los Pods, su estructura y cómo se utilizan para ejecutar aplicaciones en contenedores.

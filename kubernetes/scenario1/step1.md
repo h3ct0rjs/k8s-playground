@@ -6,8 +6,8 @@ Un Pod puede contener **uno** o **varios** contenedores que comparten :
 - red
 - especificaciones sobre cómo ejecutar los contenedores.
 
-Generalmente, un POD contiene un solo contenedor, pero puede contener múltiples contenedores que están estrechamente relacionados y necesitan compartir recursos.
-Un POD se ejecuta en un nodo del clúster de Kubernetes y es gestionado por el **controlador de PODs**. Los PODs son efímeros, lo que significa que pueden ser creados y destruidos según sea necesario.
+Generalmente, un Pod contiene un solo contenedor, pero puede contener múltiples contenedores que están estrechamente relacionados y necesitan compartir recursos.
+Un Pod se ejecuta en un nodo del clúster de Kubernetes y es gestionado por el **controlador de Pods**. Los Pods son efímeros, lo que significa que pueden ser creados y destruidos según sea necesario.
 
 ![PODs](https://kubernetes.io/images/docs/POD.svg)
 

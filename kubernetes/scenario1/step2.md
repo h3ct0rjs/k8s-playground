@@ -18,6 +18,12 @@ valida que tengas una salida con colores al ejecutar el siguiente comando:
 k get nodes -o wide
 ```{{exec}}
 
+Otra cosa que puedes hacer es simplemente en vez de usar kubectl usar kubecolor, por ejemplo:
+
+```bash
+kubecolor get nodes -o wide
+```{{exec}}
+
 
 ## 🧑‍💻 Vamos a jugar :
 
@@ -38,21 +44,29 @@ spec:
         - containerPort: 80
 ```{{copy}}
 
-Este archivo `YAML` o manifiesto define un 📦Pod llamado `mi-primer-pod` que ejecuta un contenedor con la imagen de `nginx`.
-todos los manifiestos de Kubernetes siguen una estructura similar, donde se especifica la `versión` de la API,
+Este archivo `YAML` o 📄 manifiesto define un 📦Pod llamado `mi-primer-pod` que ejecuta un contenedor con la imagen de `nginx`.
+
+Todos los manifiestos de Kubernetes siguen una estructura similar, donde se especifica la `versión` de la API,
 el tipo de recurso (en este caso, un **Pod**), los metadatos y la especificación del contenedor.
 
+Si regresas al tab de terminal, puedes ver que el archivo `mi-primer-pod.yaml` ya se encuentra en el directorio actual.
 
-##  Aplica el manifiesto para crear el Pod:
+```bash
+ls -l mi-primer-pod.yaml
+```{{exec}}
 
-➡️ Utiliza `kubectl` para aplicar/desplegar el 📦Pod definido en el archivo `mi-primer-pod.yaml`.
+##  Apliquemos el manifiesto para crear el Pod:
+
+➡️ Utiliza el comando `kubectl` para aplicar/desplegar el 📦Pod definido en el archivo `mi-primer-pod.yaml`.
 
 ```bash
 kubectl apply -f mi-primer-pod.yaml
 ```{{exec}}
 
 
-## Verifica que el 📦Pod se haya creado correctamente:
+## Verifiquemos que el 📦Pod se haya creado correctamente:
+
+Si regresamos al tab de terminal y ejecutamos el siguiente comando, veremos el estado del Pod:
 
 ```bash
 kubectl get pods -w
