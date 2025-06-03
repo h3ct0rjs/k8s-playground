@@ -20,4 +20,5 @@ Para ver de manera visual y mas detallas las estrategias de Deployment para apli
 puedes consultar el siguiente video:
 
 **~10Min**
-[![Deployment Strategies](https://play.google.com/store/apps/details/YouTube?id=com.google.android.youtube&hl=es_SVg)](https://www.youtube.com/watch?v=AWVTKBUnoIg)
+
+[![Deployment Strategies](https://1000logos.net/wp-content/uploads/2017/05/Youtube-Logo.png)](https://www.youtube.com/watch?v=AWVTKBUnoIg)

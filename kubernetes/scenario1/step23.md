@@ -1,7 +1,7 @@
 ﻿
 # Definicion de Recursos Memoria y CPU
 
-**Siempre** es necesario definir los recursos que un contenedor puede utilizar en términos de memoria y CPU.
+**Siempre** es buena practica definir los recursos que un contenedor puede utilizar en términos de memoria y CPU.
 Si no se definen, Kubernetes asignará recursos predeterminados, lo que puede llevar a problemas de rendimiento o fallos en la aplicación.
 e incluso puede generar una inestabilidad en el clúster si un contenedor consume demasiados recursos.
 

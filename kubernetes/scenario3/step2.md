@@ -1,4 +1,4 @@
-﻿## Paso 2: Exponer el Service como NodePort
+﻿## Exponer el Service como **NodePort**
 
 Supón que quieres acceder a tu aplicación desde fuera del clúster (por ejemplo, desde tu máquina local). Cambia el tipo de Service a NodePort:
 

@@ -71,25 +71,5 @@ spec:
 
 Si la Readiness Probe falla, Kubernetes no enviará tráfico al contenedor hasta que esté listo.
 
-Tomemos como ejemplo un contenedor que ejecuta una aplicación web:
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: pod-con-readiness-probe
-spec:
-  containers:
-    - name: mi-aplicacion
-      image: mi-aplicacion:latest
-      ports:
-        - containerPort: 80
-      readinessProbe:
-        httpGet:
-          path: /
-          port: 80
-        initialDelaySeconds: 5
-        periodSeconds: 10
-        timeoutSeconds: 2
-        failureThreshold: 3
-```
+⚠️: Usualmente las aplicaciones tienen un endpoint `/healthz` o similar que devuelve un estado HTTP 200 cuando están listas para recibir tráfico.
 

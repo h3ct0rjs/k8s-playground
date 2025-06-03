@@ -18,6 +18,8 @@ donde `<id-replicaset>` es un identificador único generado por Kubernetes.
 En todo momento Kubernetes mantiene el número de **ReplicaSet** especificado en el Deployment, y
 los Pods antiguos se eliminan gradualmente (rolling update).
 
+## Regresando a la Version Anterior (Rolling Back)
+
 Ahora si por algún motivo algo salió mal con el **Deployment** haremos un **rollback**, volveremos a la versión anterior,
 para ello utilizamos el siguiente comando:
 

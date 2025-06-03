@@ -29,4 +29,4 @@ kubecolor get replicasets
 
 - Permiten actualizaciones seguras (rolling updates).
 - Facilitan el rollback a versiones anteriores.
-- Gestionan automáticamente los ReplicaSets y PODs.
+- Gestionan automáticamente los ReplicaSets y Pods.
