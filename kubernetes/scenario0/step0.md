@@ -9,8 +9,8 @@ Permite hacer todas las operaciones como _**crear, actualizar, eliminar y obtene
 
 ![](http://www.techplayon.com/wp-content/uploads/2021/07/Kubectloperations.png)
 
-Cada vez que ejecutas el comando `kubectl`, estás interactuando con una API [REST](https://aws.amazon.com/es/what-is/restful-api/) de Kubernetes. La herramienta `kubectl` create solicitudes HTTP a la API y recibe respuestas en diferentes formatos, lo que te permite gestionar los recursos del clúster.
+Cada vez que ejecutas el comando `kubectl`, estás interactuando con una API [REST](https://aws.amazon.com/es/what-is/restful-api/) de Kubernetes. La herramienta `kubectl` crea solicitudes HTTP a la API y recibe respuestas en diferentes formatos, lo que te permite gestionar los recursos del clúster.
 
 ![](https://raw.githubusercontent.com/sangam14/kubernets101/master/pic8.gif)
 
- `kubectl` esta desarrollado en el lenguaje de programación [Go](https://go.dev/), y es una herramienta de código abierto que puedes encontrar en [GitHub](https://github.com/kubernetes/kubectl).
+`kubectl` esta desarrollado en el lenguaje de programación [Go](https://go.dev/), y es una herramienta de código abierto que puedes encontrar en [GitHub](https://github.com/kubernetes/kubectl).

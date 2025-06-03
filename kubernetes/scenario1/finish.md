@@ -15,7 +15,7 @@ Aquí tienes un resumen de lo que has aprendido:
 
 ## 📚 Recursos Adicionales
 Para seguir aprendiendo sobre Kubernetes, aquí hay algunos recursos que pueden ser útiles:
-- [📖 PODs](https://kubernetes.io/docs/concepts/workloads/pods/)
+- [📖 Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
 
 ## 🛣️ Próximos Pasos
 - 🏗️ Despliega más Pods y experimenta con diferentes imágenes de contenedores en el siguiente escenario.
