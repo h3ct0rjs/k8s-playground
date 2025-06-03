@@ -1,8 +1,8 @@
-﻿## Paso 1: Usar un volumen simple (emptyDir)
+﻿## Usar un volumen simple (emptyDir)
 
-Vamos a crear un pod que use un volumen temporal de tipo `emptyDir`.
+Vamos a crear un Pod que use un volumen temporal de tipo `emptyDir`.
 
-Crea un archivo llamado `pod-emptydir.yaml` con el siguiente contenido:
+Para esto, crearemos un archivo llamado `pod-emptydir.yaml` con el siguiente contenido:
 
 ```yaml
 apiVersion: v1
@@ -28,11 +28,33 @@ Aplica el manifiesto:
 kubectl apply -f pod-emptydir.yaml
 ```
 
-Verifica el pod y explora el volumen dentro del contenedor:
+Verifica el Pod y explora el volumen dentro del contenedor:
 
 ```sh
 kubectl exec -it pod-emptydir -- sh
 ls /data
 ```
 
-El volumen `emptyDir` existe mientras el pod esté corriendo.
+El volumen `emptyDir` existe mientras el Pod esté corriendo.
+
+Si creamos un archivo dentro de `/data`, este persistirá mientras el Pod esté activo. Si el Pod se elimina, el contenido del volumen también se perderá.
+Para probar esto, crea un archivo dentro del volumen:
+
+```sh
+echo "Hola, mundo!" > /data/archivo.txt
+```
+Luego, verifica que el archivo se creó correctamente:
+
+```sh
+cat /data/archivo.txt
+```
+Si todo ha ido bien, deberías ver el contenido del archivo que creaste.
+Finalmente, elimina el Pod para ver que el volumen `emptyDir` se borra junto con él:
+
+```sh
+kubectl delete pod pod-emptydir
+```
+```sh
+kubectl get pods
+```
+Si intentas acceder al Pod eliminado, verás que ya no existe, y con él, el volumen `emptyDir` también se ha eliminado.

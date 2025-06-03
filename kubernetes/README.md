@@ -22,7 +22,7 @@ En este escenario, aprenderás sobre los Pods, que son la unidad básica de ejec
 
 ### Scenario 2: Aprendizaje de Deployments
 En este escenario, aprenderás sobre los Deployments, que son una forma de gestionar la implementación y escalado de aplicaciones en Kubernetes. Aprenderás cómo crear y gestionar Deployments, así como cómo utilizar los comandos kubectl para interactuar con ellos.
-### Scenario 3: Aprendizaje de Services
+### Scenario 3: Aprendizaje de Servicios
 En este escenario, aprenderás sobre los Services, que son una forma de exponer aplicaciones en Kubernetes. Aprenderás cómo crear y gestionar Services, así como cómo utilizar los comandos kubectl para interactuar con ellos.
 
 ### Scenario 4: Aprendizaje de Volumenes
