@@ -12,6 +12,6 @@ Kubernetes ofrece varios tipos de **Servicios**, cada uno con un propósito espe
 
 - **NodePort:** Permite exponer el servicio en un puerto específico de cada nodo del clúster, permitiendo el acceso externo al servicio a través de la IP del nodo y el puerto asignado. e.g http://<node-ip>:<node-port>.
 
-- **LoadBalancer:** Permite crear un balanceador de carga externo que distribuye el tráfico entre los Pods hacia un servicio, proporcionando una IP externa para acceder al servicio. Este tipo de servicio es común en entornos de nube.
+- **LoadBalancer:** Permite crear un balanceador de carga externo que distribuye el tráfico entre los Pods hacia un servicio, proporcionando una IP externa para acceder al servicio. Este tipo de servicio es común en entornos de nube. # Es posible que no funcione en killercoda.
 
 - **Headless Service:** Permite acceder a los Pods directamente sin un balanceador de carga, útil para aplicaciones que requieren una conexión directa a los Pods.
